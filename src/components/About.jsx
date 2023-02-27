@@ -1,6 +1,5 @@
 import React from "react";
-import { TypeAnimation } from 'react-type-animation';
-
+ 
 
 const About = () => {
     return (
@@ -19,18 +18,9 @@ const About = () => {
 
                     <div className='sm:text-right text-4xl font-bold'>
                         <p>
-                            <TypeAnimation
-                                sequence={[
-                                    "Hey. I'm Ailton, nice to meet you. Please take a look arouind.", 
-                                    () => {
-                                        console.log('Done typing!'); // Place optional callbacks anywhere in the array
-                                    }
-                                ]}
-                                wrapper="div"
-                                cursor={true}
-                                repeat={Infinity}
-                                style={{ fontSize: '3xl' }}
-                            />
+                            
+                         Hey. I'm Ailton, nice to meet you. Please take a look arouind. 
+                                    
                         </p>
                     </div>
 

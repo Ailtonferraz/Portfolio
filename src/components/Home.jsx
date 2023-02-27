@@ -1,7 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { TypeAnimation } from 'react-type-animation';
-
+ 
 
 const Home = () => {
     return (
@@ -18,20 +17,7 @@ const Home = () => {
 
 
                 <h2 className='text-2xl sm:text-3xl font-bold text-[#b4bacd]'>
-                    <TypeAnimation
-                        sequence={[
-                            'Full-stack developer', // Types 'One'
-                            30000, // Waits 1s
-                            'Full-stack developer', // Deletes 'One' and types 'Two'
-                            () => {
-                                console.log('Done typing!'); // Place optional callbacks anywhere in the array
-                            }
-                        ]}
-                        wrapper="div"
-                        cursor={true}
-                        repeat={Infinity}
-                        style={{ fontSize: '3xl' }}
-                    />
+                   Full-stack developer
                 </h2>
 
 
