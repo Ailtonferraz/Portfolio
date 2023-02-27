@@ -6,7 +6,7 @@ export const data=[
         id:1,
         name:"Java",
         image:WorkIm,
-        github:"",
+        github:"https://github.com/ailtonferraz/chess",
         live:"",
     },
     {
