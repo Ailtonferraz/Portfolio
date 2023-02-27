@@ -1,5 +1,7 @@
 import React from "react";
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { TypeAnimation } from 'react-type-animation';
+
 
 const Home = () => {
     return (
@@ -13,9 +15,26 @@ const Home = () => {
                 <h2 className='text-5xl sm:text-7xl font-bold mt-2 text-[#ffffff]'>
                     I am <span className='text-[#38B6FF] '>Ailton Ferraz</span>
                 </h2>
+
+
                 <h2 className='text-2xl sm:text-3xl font-bold text-[#b4bacd]'>
-                    Full-stack developer
+                    <TypeAnimation
+                        sequence={[
+                            'Full-stack developer', // Types 'One'
+                            30000, // Waits 1s
+                            'Full-stack developer', // Deletes 'One' and types 'Two'
+                            () => {
+                                console.log('Done typing!'); // Place optional callbacks anywhere in the array
+                            }
+                        ]}
+                        wrapper="div"
+                        cursor={true}
+                        repeat={Infinity}
+                        style={{ fontSize: '3xl' }}
+                    />
                 </h2>
+
+
                 <div className='py-10'>
                     <button className='text-white group border-2 px-6 py-4 my-2 flex items-center hover:bg-[#38B6FF] hover:border-[#00a6ff]'>
                         View Work

@@ -1,4 +1,6 @@
 import React from "react";
+import { TypeAnimation } from 'react-type-animation';
+
 
 const About = () => {
     return (
@@ -13,9 +15,26 @@ const About = () => {
                     <div></div>
                 </div>
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+
+
                     <div className='sm:text-right text-4xl font-bold'>
-                        <p>Hey. I'm Ailton, nice to meet you. Please take a look arouind.</p>
+                        <p>
+                            <TypeAnimation
+                                sequence={[
+                                    "Hey. I'm Ailton, nice to meet you. Please take a look arouind.", 
+                                    () => {
+                                        console.log('Done typing!'); // Place optional callbacks anywhere in the array
+                                    }
+                                ]}
+                                wrapper="div"
+                                cursor={true}
+                                repeat={Infinity}
+                                style={{ fontSize: '3xl' }}
+                            />
+                        </p>
                     </div>
+
+
                     <div>
                         <p>
                             I'm passionate about creating great software that improves the lives of the people.
