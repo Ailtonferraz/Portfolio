@@ -8,7 +8,7 @@ const Home = () => {
             {/* Container */}
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
                 <h2 className="text-5xl md:text-7xl font-bold text-[#ffffff]">
-                    Hello,
+                    Hi,
                 </h2>
                 <h2 className='text-5xl sm:text-7xl font-bold mt-2 text-[#ffffff]'>
                     I am <span className='text-[#38B6FF] '>Ailton Ferraz</span>
