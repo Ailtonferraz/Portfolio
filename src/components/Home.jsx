@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from 'react';
+
 import { HiArrowNarrowRight } from 'react-icons/hi';
- 
+import { Link } from 'react-scroll';
+
 
 const Home = () => {
+    const [nav, setNav] = useState(false);
+    const handleClick = () => setNav(!nav);
     return (
 
         <div name='home' className='w-full h-screen bg-[#0a192f]'>
@@ -23,12 +27,15 @@ const Home = () => {
 
                 <div className='py-10'>
                     <button className='text-white group border-2 px-6 py-4 my-2 flex items-center hover:bg-[#38B6FF] hover:border-[#00a6ff]'>
-                        View Work
+                        <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+                           View Work
+                        </Link>
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3 ' />
                         </span>
                     </button>
                 </div>
+          
             </div>
 
         </div>

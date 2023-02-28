@@ -11,7 +11,7 @@ export const data=[
     },
     {
         id:2,
-        name:"React JS Application",
+        name:"Web Servisces com Spring Boot e JPA/ Hibertnate",
         image:RealEst,
         github:"",
         live:"",
